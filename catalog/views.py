@@ -7,9 +7,10 @@ def home(request):
 
 def contacts(request):
     if request.method == 'POST':
-        user = dict()
-        user['name'] = request.POST.get('name')
-        user['phone'] = request.POST.get('phone')
-        user['message'] = request.POST.get('message')
-        print(user)
+        user_data = dict()
+        user_data['name'] = request.POST.get('name')
+        user_data['phone'] = request.POST.get('phone')
+        user_data['message'] = request.POST.get('message')
+        print(user_data)
+        print(f"csrf_token: {request.POST['csrfmiddlewaretoken']}")
     return render(request, 'catalog/contacts.html')
