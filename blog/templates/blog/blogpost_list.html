@@ -1,0 +1,27 @@
+{% extends 'catalog/base.html' %}
+
+{% block content %}
+<p class="fs-3 text-body-secondary text-center mb-2">Здесь иногда будут появляться свежие новости</p>
+<div class="text-center">
+    <a class="btn btn-outline-dark m-4" href="{% url 'blog:blogpost_create' %}">Добавить статью</a>
+</div>
+<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+    {% for object in object_list %}
+    <div class="col-6">
+        <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+                <h5 class="my-0 fw-normal">{{ object.title }}</h5>
+            </div>
+            <div class="card-body">
+                <ul class="list-unstyled mt-3 mb-4">
+                    <li>{{ object.content|slice:':61' }} ...</li>
+                    <li>Дата публикации: {{ object.created_at }}</li>
+                </ul>
+                <a class="w-50 btn btn-lg btn-outline-primary m-1"
+                   href="{% url 'blog:blogpost_view' object.slug %}">Просмотр</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'catalog/base.html' %}
+{% load my_tags %}
+
+{% block content %}
+<div class="d-flex justify-content-center">
+    <div class="card mb-4 rounded-3 shadow-sm w-50 text-center">
+        <div class="card-body">
+            <form method="post">
+                {% csrf_token %}
+                <h3 class="card-title">Удалить статью "{{ object.title }}"?</h3>
+                <button type="submit" class="btn btn-lg btn-outline-warning">Подтвердить</button>
+                <a class="btn btn-lg btn-outline-danger" href="{% url 'blog:blogpost_view' object.pk %}">Отмена</a>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
