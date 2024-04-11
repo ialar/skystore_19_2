@@ -1,22 +1,25 @@
 {% extends 'catalog/base.html' %}
 
 {% block content %}
-<p class="fs-5 text-body-secondary text-center mb-4">Добро пожаловать в наш уютный интернет-магазин цифровой техники</p>
+<p class="fs-3 text-body-secondary text-center mb-2">Добро пожаловать в наш уютный интернет-магазин цифровой техники</p>
+<div class="text-center">
+    <a class="btn btn-outline-dark m-4" href="{% url 'catalog:product_create' %}">Добавить товар</a>
+</div>
 <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
     {% for object in object_list %}
     <div class="col-4">
         <div class="card mb-4 rounded-3 shadow-sm">
             <div class="card-header py-3">
-                <h3 class="my-0 fw-normal">{{ object.name }}</h3>
+                <h5 class="my-0 fw-normal">{{ object.name }}</h5>
             </div>
             <div class="card-body">
-                <h3 class="card-title pricing-card-title">{{ object.price }} у.е.</h3>
+                <h6 class="card-title pricing-card-title">{{ object.price }} у.е.</h6>
                 <ul class="list-unstyled mt-3 mb-4">
                     <li>{{ object.category.name }}</li>
                     <li>{{ object.description|slice:':61' }} ...</li>
                 </ul>
                 <a class="w-100 btn btn-lg btn-outline-primary"
-                   href="{% url 'catalog:product_view' object.pk %}">Смотреть</a>
+                   href="{% url 'catalog:product_view' object.pk %}">Просмотр</a>
             </div>
         </div>
     </div>

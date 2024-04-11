@@ -1,0 +1,19 @@
+{% extends 'catalog/base.html' %}
+
+{% block content %}
+<div class="d-flex justify-content-center">
+    <div class="card mb-4 rounded-3 shadow-sm w-50 text-center">
+        <div class="card-body">
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                {% if object %}
+                    <button type="submit" class="w-50 btn btn-lg btn-outline-success">Изменить</button>
+                {% else %}
+                    <button type="submit" class="w-50 btn btn-lg btn-outline-success">Сохранить</button>
+                {% endif %}
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
