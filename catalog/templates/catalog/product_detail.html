@@ -13,6 +13,8 @@
             <p>Категория: {{ object.category.name|lower }}</p>
             <p>{{ object.category.description }}</p>
             <p>{{ object.description }}</p>
+            <p>Версия {{ current_version.version_number|default:"v0.0" }}
+                      {{ current_version.version_name|default:"(не указана)" }}</p>
             <a class="btn btn-lg btn-outline-warning"
                href="{% url 'catalog:product_edit' object.pk %}">Редактировать</a>
             <a class="btn btn-lg btn-outline-danger"

@@ -1,19 +1,52 @@
 {% extends 'catalog/base.html' %}
 
 {% block content %}
-<div class="d-flex justify-content-center">
-    <div class="card mb-4 rounded-3 shadow-sm w-50 text-center">
-        <div class="card-body">
-            <form method="post" enctype="multipart/form-data">
-                {% csrf_token %}
-                {{ form.as_p }}
-                {% if object %}
-                    <button type="submit" class="w-50 btn btn-lg btn-outline-success">Изменить</button>
-                {% else %}
-                    <button type="submit" class="w-50 btn btn-lg btn-outline-success">Сохранить</button>
-                {% endif %}
-            </form>
+<div class="col-12">
+    <form class="row" method="post" enctype="multipart/form-data">
+        <div class="col-6">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">
+                        {% if object %}
+                        Редактирование
+                        {% else %}
+                        Добавление товара
+                        {% endif %}
+                    </h4>
+                </div>
+                <div class="card-body">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <div class="text-center">
+                        <button type="submit" class="w-50 btn btn-lg btn-outline-success btn-center">
+                            {% if object %}
+                            Сохранить
+                            {% else %}
+                            Создать
+                            {% endif %}
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+        {% if object %}
+        <div class="col-6">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Версия продукта</h4>
+                </div>
+                <div class="card-body">
+                    {{ formset.management_form}}
+                    {% for form in formset.forms %}
+                    {{ form.as_p }}
+                    {% if forloop.revcounter0 != 0 %}
+                    <hr>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </form>
 </div>
 {% endblock %}
