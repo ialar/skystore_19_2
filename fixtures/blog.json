@@ -1,0 +1,28 @@
+[
+{
+    "model": "blog.blogpost",
+    "pk": 3,
+    "fields": {
+        "title": "Новые мониторы",
+        "slug": "novyie-monitoryi",
+        "content": "Скоро в магазине появится новая модель мониторов! Мы уверены, цена Вас приятно удивит.",
+        "preview": "blogpost_images/Digma_in_box.jpg",
+        "created_at": "2024-04-10T19:47:52Z",
+        "is_published": true,
+        "views": 71
+    }
+},
+{
+    "model": "blog.blogpost",
+    "pk": 7,
+    "fields": {
+        "title": "Новые принтеры",
+        "slug": "novyie-printeryi",
+        "content": "Написать текст поста",
+        "preview": "blogpost_images/Printer_box.jpg",
+        "created_at": "2024-04-10T20:36:54Z",
+        "is_published": false,
+        "views": 14
+    }
+}
+]
