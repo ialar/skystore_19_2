@@ -49,13 +49,12 @@ def confirm_register(request, code):
 
 
 class UserPasswordRecoveryView(FormView):
-    model = User
     form_class = UserPasswordResetForm
     template_name = 'users/user_password_reset.html'
     success_url = reverse_lazy('users:user_password_sent')
 
     def form_valid(self, form):
-        email = self.request.POST['email']
+        email = form.cleaned_data['email']
         user = User.objects.get(email=email)
         characters = string.ascii_letters + string.digits
         new_password = ''.join(random.choice(characters) for i in range(10))
