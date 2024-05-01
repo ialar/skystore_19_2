@@ -24,6 +24,7 @@ class Product(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Дата создания')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='Дата изменения')
     count_of_views = models.PositiveIntegerField(default=0, verbose_name='Количество просмотров')
+    owner = models.ForeignKey('users.User', on_delete=models.SET_NULL, verbose_name='Пользователь', **NULLABLE)
 
     def __str__(self):
         return f'{self.name} ({self.category}) - {self.price} руб.'
@@ -41,7 +42,7 @@ class Version(models.Model):
     is_active = models.BooleanField(default=False, verbose_name='Active')
 
     def __str__(self):
-        return f'Версия {self.product} - {self.version_name} ({self.version_number})'
+        return f'Версия {self.product} - {self.version_number}/{self.version_name} [{self.is_active}]'
 
     class Meta:
         verbose_name = 'версия'

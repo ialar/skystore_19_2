@@ -1,9 +1,11 @@
 {% extends 'catalog/base.html' %}
 
 {% block content %}
-<p class="fs-3 text-body-secondary text-center mb-2">Добро пожаловать в наш уютный интернет-магазин цифровой техники</p>
+<p class="fs-4 text-body-secondary text-center mb-4">Добро пожаловать в наш уютный интернет-магазин цифровой техники</p>
 <div class="text-center">
+    {% if user.is_authenticated %}
     <a class="btn btn-outline-dark m-4" href="{% url 'catalog:product_create' %}">Добавить товар</a>
+    {% endif %}
 </div>
 <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
     {% for object in object_list %}
