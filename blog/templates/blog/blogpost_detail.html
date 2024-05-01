@@ -15,7 +15,7 @@
                href="{% url 'blog:blogpost_edit' object.pk %}">Редактировать</a>
             <a class="btn btn-lg btn-outline-danger"
                href="{% url 'blog:blogpost_delete' object.pk %}">Удалить</a>
-            <p class="fs-3 text-body-secondary text-center m-3">Просмотры: {{ object.views }}</p>
+            <p class="fs-6 text-body-secondary text-center m-3">Просмотры: {{ object.views }}</p>
         </div>
     </div>
 </div>
