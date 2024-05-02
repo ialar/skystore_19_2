@@ -1,4 +1,5 @@
-from django.contrib.auth.forms import AuthenticationForm, UserCreationForm, PasswordResetForm
+from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
+from django import forms
 
 from catalog.forms import StyleFormMixin
 from users.models import User
@@ -17,7 +18,6 @@ class RegisterForm(StyleFormMixin, UserCreationForm):
         fields = ('email', 'password1', 'password2')
 
 
-class UserPasswordResetForm(StyleFormMixin, PasswordResetForm):
-    class Meta:
-        model = User
-        fields = ('email',)
+class UserPasswordResetForm(forms.Form):
+    email = forms.EmailField(max_length=254,
+                             widget=forms.EmailInput(attrs={"autocomplete": "email"}),)
