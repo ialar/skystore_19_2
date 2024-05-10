@@ -9,7 +9,7 @@
                 {% csrf_token %}
                 <h3 class="card-title">Удалить статью "{{ object.title }}"?</h3>
                 <button type="submit" class="btn btn-lg btn-outline-warning">Подтвердить</button>
-                <a class="btn btn-lg btn-outline-danger" href="{% url 'blog:blogpost_view' object.pk %}">Отмена</a>
+                <a class="btn btn-lg btn-outline-danger" href="{% url 'blog:blogpost_list' %}">Отмена</a>
             </form>
         </div>
     </div>

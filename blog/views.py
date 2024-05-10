@@ -1,14 +1,20 @@
-from django.urls import reverse_lazy, reverse
+from django.contrib.auth.mixins import PermissionRequiredMixin
+from django.urls import reverse_lazy
 from django.views.generic import CreateView, DetailView, ListView, UpdateView, DeleteView
 from pytils.translit import slugify
 
 from blog.models import BlogPost
+from blog.templates.blog.forms import BlogPostForm
+
+CONTENT_PERMISSIONS = ('blog.can_change_blogpost_title', 'blog.can_change_blogpost_content',
+                       'blog.can_change_blogpost_preview', 'blog.can_change_blogpost_is_published_status')
 
 
-class BlogPostCreateView(CreateView):
+class BlogPostCreateView(PermissionRequiredMixin, CreateView):
     model = BlogPost
-    fields = ('title', 'slug', 'content', 'preview', 'created_at', 'is_published')
+    form_class = BlogPostForm
     success_url = reverse_lazy('blog:blogpost_list')
+    permission_required = CONTENT_PERMISSIONS
 
     def form_valid(self, form):
         if form.is_valid():
@@ -36,20 +42,14 @@ class BlogPostDetailView(DetailView):
         return self.object
 
 
-class BlogPostUpdateView(UpdateView):
+class BlogPostUpdateView(PermissionRequiredMixin, UpdateView):
     model = BlogPost
-    fields = ('title', 'slug', 'content', 'preview', 'created_at', 'is_published')
-
-    def form_valid(self, form):
-        if form.is_valid():
-            new_post = form.save()
-            new_post.slug = slugify(new_post.title)
-        return super().form_valid(form)
-
-    def get_success_url(self):
-        return reverse('blog:blogpost_view', args=[self.kwargs.get('pk')])
+    form_class = BlogPostForm
+    success_url = reverse_lazy('blog:blogpost_list')
+    permission_required = CONTENT_PERMISSIONS
 
 
-class BlogPostDeleteView(DeleteView):
+class BlogPostDeleteView(PermissionRequiredMixin, DeleteView):
     model = BlogPost
     success_url = reverse_lazy('blog:blogpost_list')
+    permission_required = CONTENT_PERMISSIONS

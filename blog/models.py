@@ -20,3 +20,7 @@ class BlogPost(models.Model):
         verbose_name = 'статья'
         verbose_name_plural = 'статьи'
         ordering = ('created_at',)
+        permissions = [('can_change_blogpost_title', 'Can change title of blogpost'),
+                       ('can_change_blogpost_content', 'Can change content of blogpost'),
+                       ('can_change_blogpost_preview', 'Can change preview of blogpost'),
+                       ('can_change_blogpost_is_published_status', 'Can change publication status of blogpost')]

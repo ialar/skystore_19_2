@@ -11,10 +11,12 @@
         <div class="card-body">
             <p>{{ object.content }}</p>
             <p>Дата публикации: {{ object.created_at }}</p>
+            {% if perms.blog %}
             <a class="btn btn-lg btn-outline-warning"
                href="{% url 'blog:blogpost_edit' object.pk %}">Редактировать</a>
             <a class="btn btn-lg btn-outline-danger"
                href="{% url 'blog:blogpost_delete' object.pk %}">Удалить</a>
+            {% endif %}
             <p class="fs-6 text-body-secondary text-center m-3">Просмотры: {{ object.views }}</p>
         </div>
     </div>
