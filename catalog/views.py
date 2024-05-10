@@ -1,10 +1,11 @@
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.core.exceptions import PermissionDenied
 from django.forms import inlineformset_factory
 from django.http import HttpResponseRedirect
 from django.urls import reverse_lazy, reverse
 from django.views.generic import CreateView, DetailView, ListView, UpdateView, TemplateView, DeleteView
 
-from catalog.forms import ProductForm, VersionForm
+from catalog.forms import ProductForm, VersionForm, ProductModeratorForm
 from catalog.models import Product, Version
 
 
@@ -12,8 +13,8 @@ class ProductListView(ListView):
     model = Product
 
     def get_queryset(self, *args, **kwargs):
-        queryset = super().get_queryset(*args, **kwargs)
-        # queryset = queryset.filter(category_id=self.kwargs.get('pk'))
+        queryset = super().get_queryset()
+        queryset = queryset.filter(is_published=True)
         return queryset
 
     def get_context_data(self, *args, **kwargs):
@@ -74,7 +75,7 @@ class ProductCreateView(LoginRequiredMixin, CreateView):
         return super().form_valid(form)
 
 
-class ProductUpdateView(LoginRequiredMixin, UpdateView):
+class ProductUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Product
     form_class = ProductForm
 
@@ -100,7 +101,27 @@ class ProductUpdateView(LoginRequiredMixin, UpdateView):
             version_form.save()
         return super().form_valid(form)
 
+    def get_form_class(self):
+        user = self.request.user
+        if user == self.object.owner:
+            return ProductForm
+        elif user.groups.filter(name='moderator').exists():
+            return ProductModeratorForm
+        raise PermissionDenied
 
-class ProductDeleteView(LoginRequiredMixin, DeleteView):
+    def test_func(self):
+        product = self.get_object()
+        user = self.request.user
+        return (product.owner == user or
+                user.is_superuser or
+                user.groups.filter(name='moderator').exists())
+
+
+class ProductDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     model = Product
     success_url = reverse_lazy('catalog:product_list')
+
+    def test_func(self):
+        product = self.get_object()
+        user = self.request.user
+        return product.owner == user or self.request.user.is_superuser
