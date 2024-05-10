@@ -1,230 +1,306 @@
 [
-{
+  {
     "model": "catalog.category",
     "pk": 1,
     "fields": {
-        "name": "Периферия и аксессуары",
-        "description": "К периферийным устройствам относят вспомогательное оборудование, например, мышь, клавиатуру. Вспомогательное оборудование каким-либо способом подсоединяется (подключается) к компьютеру и работает совместно с ним."
+      "name": "Периферия и аксессуары",
+      "description": "К периферийным устройствам относят вспомогательное оборудование, например, мышь, клавиатуру. Вспомогательное оборудование каким-либо способом подсоединяется (подключается) к компьютеру и работает совместно с ним."
     }
-},
-{
+  },
+  {
     "model": "catalog.category",
     "pk": 2,
     "fields": {
-        "name": "Мониторы",
-        "description": "Устройство, которое позволяет визуализировать информацию, которую вы вводите на компьютере. Оно представляет собой экран, на котором отображаются картинки, тексты, видео и другие графические элементы."
+      "name": "Мониторы",
+      "description": "Устройство, которое позволяет визуализировать информацию, которую вы вводите на компьютере. Оно представляет собой экран, на котором отображаются картинки, тексты, видео и другие графические элементы."
     }
-},
-{
+  },
+  {
     "model": "catalog.category",
     "pk": 3,
     "fields": {
-        "name": "Системный блок",
-        "description": "Физически представляет собой корпус, наполненный аппаратным обеспечением для создания компьютера. Функционально представляет собой основу для создания и дальнейшего расширения вычислительной системы."
+      "name": "Системный блок",
+      "description": "Физически представляет собой корпус, наполненный аппаратным обеспечением для создания компьютера. Функционально представляет собой основу для создания и дальнейшего расширения вычислительной системы."
     }
-},
-{
+  },
+  {
     "model": "catalog.category",
     "pk": 4,
     "fields": {
-        "name": "Оргтехника",
-        "description": "Техническое оборудование офиса, облегчающее и ускоряющее бумажное делопроизводство и административно-управленческую деятельность."
+      "name": "Оргтехника",
+      "description": "Техническое оборудование офиса, облегчающее и ускоряющее бумажное делопроизводство и административно-управленческую деятельность."
     }
-},
-{
+  },
+  {
     "model": "catalog.product",
     "pk": 1,
     "fields": {
-        "name": "Sony 100",
-        "description": "Sony 100 - первое поколение моделей мониторов Sony Group Corporation.",
-        "image": "products_images/Sony_100.jpg",
-        "category": 2,
-        "price": "9900.00",
-        "created_at": "2024-03-18T20:00:30.513Z",
-        "updated_at": "2024-04-21T14:20:22.966Z",
-        "count_of_views": 9
+      "name": "Sony 100",
+      "description": "Sony 100 - первое поколение моделей мониторов Sony Group Corporation.",
+      "image": "products_images/Sony_100.jpg",
+      "category": 2,
+      "price": "9900.00",
+      "created_at": "2024-03-18T20:00:30.513Z",
+      "updated_at": "2024-05-10T16:05:56.834Z",
+      "count_of_views": 11,
+      "owner": 4,
+      "is_published": true
     }
-},
-{
+  },
+  {
     "model": "catalog.product",
     "pk": 2,
     "fields": {
-        "name": "Samsung CF39",
-        "description": "Монитор samsung С24F390 - это игровая модель, с которой вы сможете в полной мере насладиться невероятно красочной и максимально четкой картинкой в процессе прохождения видеоигры. данное устройство стало обладателем классической черной расцветки, поэтому оно достойно займет свое место на вашем рабочем столе.",
-        "image": "products_images/Samsung-CF39.jpg",
-        "category": 2,
-        "price": "9999.00",
-        "created_at": "2024-03-18T20:00:30.513Z",
-        "updated_at": "2024-04-21T14:04:26.812Z",
-        "count_of_views": 26
+      "name": "Samsung CF39",
+      "description": "Монитор samsung С24F390 - это игровая модель, с которой вы сможете в полной мере насладиться невероятно красочной и максимально четкой картинкой в процессе прохождения видеоигры. данное устройство стало обладателем классической черной расцветки, поэтому оно достойно займет свое место на вашем рабочем столе.",
+      "image": "products_images/Samsung-CF39.jpg",
+      "category": 2,
+      "price": "9999.00",
+      "created_at": "2024-03-18T20:00:30.513Z",
+      "updated_at": "2024-05-10T16:37:34.213Z",
+      "count_of_views": 34,
+      "owner": null,
+      "is_published": true
     }
-},
-{
+  },
+  {
     "model": "catalog.product",
     "pk": 3,
     "fields": {
-        "name": "Samsung Essential S24",
-        "description": "Монитор Samsung LS24C360EAIXCI выполнен в черном корпусе с диагональю экрана 24\". Он устанавливается на широкую подставку и может фиксироваться на стене. Для этого подбирается крепление, соответствующее стандарту VESA 75x75. Изогнутый экран обеспечивает полное погружение в происходящее. Охватывая большее поле зрения, он уменьшает периферийные искажения, позволяет лучше ощутить глубину изображения и сосредоточиться на нем.\r\nВ основе экрана Samsung LS24C360EAIXCI лежит VA-матрица с LED-подсветкой и широкими углами обзора 178°/178°. Благодаря ей изображение на экране обретает разрешение 1920x1080 (Full-HD) и четкость цветопередачи вне зависимости от ракурса просмотра. Для синхронизации видеокарты и монитора используется технология AMD FreeSync. Она предотвращает разрывы изображения, обеспечивая непрерывность процесса игры. Частота 75 Гц исключает лаги и шлейфы при просмотре контента. Разъемы HDMI и VGA (D-Sub) создают удобную и гибкую среду для подключения.",
-        "image": "products_images/Samsung_Essential_S24.jpg",
-        "category": 2,
-        "price": "9999.99",
-        "created_at": "2024-03-18T20:00:30.513Z",
-        "updated_at": "2024-04-21T20:51:10.915Z",
-        "count_of_views": 7
+      "name": "Samsung Essential S24",
+      "description": "Монитор Samsung LS24C360EAIXCI выполнен в черном корпусе с диагональю экрана 24\". Он устанавливается на широкую подставку и может фиксироваться на стене. Для этого подбирается крепление, соответствующее стандарту VESA 75x75. Изогнутый экран обеспечивает полное погружение в происходящее. Охватывая большее поле зрения, он уменьшает периферийные искажения, позволяет лучше ощутить глубину изображения и сосредоточиться на нем.\r\nВ основе экрана Samsung LS24C360EAIXCI лежит VA-матрица с LED-подсветкой и широкими углами обзора 178°/178°. Благодаря ей изображение на экране обретает разрешение 1920x1080 (Full-HD) и четкость цветопередачи вне зависимости от ракурса просмотра. Для синхронизации видеокарты и монитора используется технология AMD FreeSync. Она предотвращает разрывы изображения, обеспечивая непрерывность процесса игры. Частота 75 Гц исключает лаги и шлейфы при просмотре контента. Разъемы HDMI и VGA (D-Sub) создают удобную и гибкую среду для подключения.",
+      "image": "products_images/Samsung_Essential_S24.jpg",
+      "category": 2,
+      "price": "9999.99",
+      "created_at": "2024-03-18T20:00:30.513Z",
+      "updated_at": "2024-04-21T20:51:10.915Z",
+      "count_of_views": 7,
+      "owner": null,
+      "is_published": false
     }
-},
-{
+  },
+  {
     "model": "catalog.product",
     "pk": 4,
     "fields": {
-        "name": "Logitech M190 Black",
-        "description": "Беспроводная мышь Logitech M190 с корпусом из серого и черного пластика подключается к компьютеру или ноутбуку по радиоканалу. Приемный блок для USB-порта входит в комплект. Связь остается стабильной в радиусе до 10 м. Симметричный корпус с нескользящим прорезиненным покрытием подходит для правой и левой руки.",
-        "image": "products_images/Logitech-M190-Charcoal.jpg",
-        "category": 1,
-        "price": "500.00",
-        "created_at": "2024-03-18T20:00:30.513Z",
-        "updated_at": "2024-04-29T10:08:27.176Z",
-        "count_of_views": 23
+      "name": "Logitech M190 Black",
+      "description": "Беспроводная мышь Logitech M190 с корпусом из серого и черного пластика подключается к компьютеру или ноутбуку по радиоканалу. Приемный блок для USB-порта входит в комплект. Связь остается стабильной в радиусе до 10 м. Симметричный корпус с нескользящим прорезиненным покрытием подходит для правой и левой руки.",
+      "image": "products_images/Logitech-M190-Charcoal.jpg",
+      "category": 1,
+      "price": "500.00",
+      "created_at": "2024-03-18T20:00:30.513Z",
+      "updated_at": "2024-05-10T15:52:22.601Z",
+      "count_of_views": 29,
+      "owner": null,
+      "is_published": true
     }
-},
-{
+  },
+  {
     "model": "catalog.product",
     "pk": 5,
     "fields": {
-        "name": "4Aces",
-        "description": "Бренд 4Aces - команда профессионалов, которые знают, что такое надежный игровой компьютер.",
-        "image": "products_images/4Aces.jpg",
-        "category": 3,
-        "price": "7499.90",
-        "created_at": "2024-03-18T20:00:30.513Z",
-        "updated_at": "2024-04-23T07:09:07.609Z",
-        "count_of_views": 139
+      "name": "4Aces",
+      "description": "Бренд 4Aces - команда профессионалов, которые знают, что такое надежный игровой компьютер.",
+      "image": "products_images/4Aces.jpg",
+      "category": 3,
+      "price": "7499.90",
+      "created_at": "2024-03-18T20:00:30.513Z",
+      "updated_at": "2024-05-10T19:03:52.089Z",
+      "count_of_views": 209,
+      "owner": 4,
+      "is_published": true
     }
-},
-{
+  },
+  {
     "model": "catalog.product",
     "pk": 6,
     "fields": {
-        "name": "Sony 200",
-        "description": "Sony 200 - второе поколение моделей мониторов Sony Group Corporation.",
-        "image": "products_images/Sony_200.jpg",
-        "category": 2,
-        "price": "1990.89",
-        "created_at": "2024-03-18T20:00:30.513Z",
-        "updated_at": "2024-04-21T14:34:33.234Z",
-        "count_of_views": 11
+      "name": "Sony 200",
+      "description": "Sony 200 - второе поколение моделей мониторов Sony Group Corporation.",
+      "image": "products_images/Sony_200.jpg",
+      "category": 2,
+      "price": "1990.89",
+      "created_at": "2024-03-18T20:00:30.513Z",
+      "updated_at": "2024-05-10T16:02:53.688Z",
+      "count_of_views": 15,
+      "owner": 4,
+      "is_published": true
     }
-},
-{
+  },
+  {
     "model": "catalog.product",
     "pk": 7,
     "fields": {
-        "name": "Epson 100",
-        "description": "Epson 100 - первое поколение моделей принтеров Epson.",
-        "image": "products_images/Epson.jpg",
-        "category": 4,
-        "price": "6979.99",
-        "created_at": "2024-03-18T20:00:30.513Z",
-        "updated_at": "2024-04-23T13:32:42.389Z",
-        "count_of_views": 52
+      "name": "Epson 100",
+      "description": "Epson 100 - первое поколение моделей принтеров Epson.",
+      "image": "products_images/Epson.jpg",
+      "category": 4,
+      "price": "6979.99",
+      "created_at": "2024-03-18T20:00:30.513Z",
+      "updated_at": "2024-05-10T15:53:08.573Z",
+      "count_of_views": 54,
+      "owner": null,
+      "is_published": false
     }
-},
-{
+  },
+  {
     "model": "catalog.product",
     "pk": 8,
     "fields": {
-        "name": "Canon 100",
-        "description": "Canon 100 - первое поколение моделей принтеров Canon.",
-        "image": "products_images/Canon.jpg",
-        "category": 4,
-        "price": "5990.00",
-        "created_at": "2024-03-18T20:00:30.513Z",
-        "updated_at": "2024-04-29T10:35:24.792Z",
-        "count_of_views": 74
+      "name": "Canon 100",
+      "description": "Canon 100 - первое поколение моделей принтеров Canon.",
+      "image": "products_images/Canon.jpg",
+      "category": 4,
+      "price": "5990.00",
+      "created_at": "2024-03-18T20:00:30.513Z",
+      "updated_at": "2024-05-10T16:06:10.900Z",
+      "count_of_views": 88,
+      "owner": null,
+      "is_published": true
     }
-},
-{
+  },
+  {
     "model": "catalog.product",
     "pk": 11,
     "fields": {
-        "name": "Acer B248",
-        "description": "Acer B248 - 23,8\" монитор full hd 1920x1080 с поддержкой HDR10. Док-станция Acer серии B8 повышает вашу производительность благодаря быстрому подключению и зарядке ноутбуков и других периферийных устройств, а также обеспечивает четкое изображение с разрешением 1080p.",
-        "image": "products_images/Acer_100.jpg",
-        "category": 2,
-        "price": "6778.99",
-        "created_at": "2024-04-08T11:54:58.253Z",
-        "updated_at": "2024-04-29T10:37:37.250Z",
-        "count_of_views": 92
+      "name": "Acer B248",
+      "description": "Acer B248 - 23,8\" монитор full hd 1920x1080 с поддержкой HDR10. Док-станция Acer серии B8 повышает вашу производительность благодаря быстрому подключению и зарядке ноутбуков и других периферийных устройств, а также обеспечивает четкое изображение с разрешением 1080p.",
+      "image": "products_images/Acer_100.jpg",
+      "category": 2,
+      "price": "6778.99",
+      "created_at": "2024-04-08T11:54:58.253Z",
+      "updated_at": "2024-05-10T12:18:33.466Z",
+      "count_of_views": 116,
+      "owner": null,
+      "is_published": false
     }
-},
-{
+  },
+  {
+    "model": "catalog.product",
+    "pk": 19,
+    "fields": {
+      "name": "Test product",
+      "description": "Created by auth_user",
+      "image": "",
+      "category": 2,
+      "price": "987.00",
+      "created_at": "2024-04-30T13:35:58.940Z",
+      "updated_at": "2024-05-10T16:37:55.302Z",
+      "count_of_views": 96,
+      "owner": 3,
+      "is_published": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 21,
+    "fields": {
+      "name": "Test product 2",
+      "description": "Test 2",
+      "image": "",
+      "category": 3,
+      "price": null,
+      "created_at": "2024-05-10T16:31:36.649Z",
+      "updated_at": "2024-05-10T16:38:49.578Z",
+      "count_of_views": 20,
+      "owner": 4,
+      "is_published": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 22,
+    "fields": {
+      "name": "Test product 3",
+      "description": "Test 3",
+      "image": "",
+      "category": 1,
+      "price": "4321.00",
+      "created_at": "2024-05-10T16:38:42.405Z",
+      "updated_at": "2024-05-10T16:38:46.227Z",
+      "count_of_views": 4,
+      "owner": 6,
+      "is_published": true
+    }
+  },
+  {
     "model": "catalog.version",
     "pk": 1,
     "fields": {
-        "product": 5,
-        "version_number": "v1.0",
-        "version_name": "(базовая сборка)",
-        "is_active": false
+      "product": 5,
+      "version_number": "v1.0",
+      "version_name": "(базовая сборка)",
+      "is_active": false
     }
-},
-{
+  },
+  {
     "model": "catalog.version",
     "pk": 2,
     "fields": {
-        "product": 11,
-        "version_number": "v2.0",
-        "version_name": "(улучшенная сборка)",
-        "is_active": true
+      "product": 11,
+      "version_number": "v2.0",
+      "version_name": "(улучшенная сборка)",
+      "is_active": true
     }
-},
-{
+  },
+  {
     "model": "catalog.version",
     "pk": 3,
     "fields": {
-        "product": 5,
-        "version_number": "v0.1",
-        "version_name": "(новинка)",
-        "is_active": true
+      "product": 5,
+      "version_number": "v0.1",
+      "version_name": "(новинка)",
+      "is_active": true
     }
-},
-{
+  },
+  {
     "model": "catalog.version",
     "pk": 4,
     "fields": {
-        "product": 8,
-        "version_number": "v3.0",
-        "version_name": "(б/у)",
-        "is_active": true
+      "product": 8,
+      "version_number": "v3.0",
+      "version_name": "(б/у)",
+      "is_active": true
     }
-},
-{
+  },
+  {
     "model": "catalog.version",
     "pk": 5,
     "fields": {
-        "product": 7,
-        "version_number": "v1.0",
-        "version_name": "(базовая сборка)",
-        "is_active": true
+      "product": 7,
+      "version_number": "v1.0",
+      "version_name": "(базовая сборка)",
+      "is_active": true
     }
-},
-{
+  },
+  {
     "model": "catalog.version",
     "pk": 6,
     "fields": {
-        "product": 11,
-        "version_number": "v3.0",
-        "version_name": "(б/у)",
-        "is_active": false
+      "product": 11,
+      "version_number": "v3.0",
+      "version_name": "(б/у)",
+      "is_active": false
     }
-},
-{
+  },
+  {
     "model": "catalog.version",
     "pk": 9,
     "fields": {
-        "product": 2,
-        "version_number": "v0.1",
-        "version_name": "(новинка)",
-        "is_active": true
+      "product": 2,
+      "version_number": "v0.1",
+      "version_name": "(новинка)",
+      "is_active": true
     }
-}
+  },
+  {
+    "model": "catalog.version",
+    "pk": 11,
+    "fields": {
+      "product": 19,
+      "version_number": "v2.0",
+      "version_name": "(улучшенная сборка)",
+      "is_active": true
+    }
+  }
 ]

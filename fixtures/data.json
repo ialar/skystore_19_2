@@ -1,0 +1,1400 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2024-05-10T10:14:00.143Z",
+      "user": 1,
+      "content_type": 3,
+      "object_id": "1",
+      "object_repr": "moderator",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2024-05-10T10:55:01.580Z",
+      "user": 1,
+      "content_type": 3,
+      "object_id": "1",
+      "object_repr": "moderator",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2024-05-10T11:01:19.022Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "5",
+      "object_repr": "moderator@sky.pro",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2024-05-10T11:25:28.196Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "5",
+      "object_repr": "moderator@sky.pro",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2024-05-10T11:26:24.262Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "3",
+      "object_repr": "larionovbox@yandex.ru",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2024-05-10T11:50:08.288Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "admin@sky.pro",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2024-05-10T12:09:45.418Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "6",
+      "object_repr": "moderator@sky.pro",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2024-05-10T12:18:26.856Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "6",
+      "object_repr": "moderator@sky.pro",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Last login\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2024-05-10T15:51:49.612Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "5",
+      "object_repr": "4Aces (Системный блок) - 7499.90 руб.",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044c\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2024-05-10T15:56:30.898Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Sony 100 (Мониторы) - 9900.00 руб.",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044c\", \"\\u041e\\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u043d\\u043e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2024-05-10T15:56:39.163Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "6",
+      "object_repr": "Sony 200 (Мониторы) - 1990.89 руб.",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044c\", \"\\u041e\\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u043d\\u043e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2024-05-10T15:58:35.643Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "7",
+      "object_repr": "\"Новые принтеры\" (дата создания: 2024-04-10 23:36:54+03:00)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u043d\\u043e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2024-05-10T15:58:53.152Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "7",
+      "object_repr": "\"Новые принтеры\" (дата создания: 2024-04-10 23:36:54+03:00)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u043d\\u043e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2024-05-10T16:29:01.591Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "20",
+      "object_repr": "Test product 2 (Оргтехника) - 1234.00 руб.",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u043d\\u043e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2024-05-10T16:30:50.340Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "20",
+      "object_repr": "Test product 2 (Оргтехника) - 1234.00 руб.",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2024-05-10T16:44:40.170Z",
+      "user": 1,
+      "content_type": 3,
+      "object_id": "1",
+      "object_repr": "moderator",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2024-05-10T16:46:24.942Z",
+      "user": 1,
+      "content_type": 3,
+      "object_id": "1",
+      "object_repr": "moderator",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2024-05-10T16:47:15.900Z",
+      "user": 1,
+      "content_type": 3,
+      "object_id": "1",
+      "object_repr": "moderator",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2024-05-10T16:49:43.651Z",
+      "user": 1,
+      "content_type": 3,
+      "object_id": "2",
+      "object_repr": "content manager",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2024-05-10T16:52:35.559Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "7",
+      "object_repr": "content@sky.pro",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+      "action_time": "2024-05-10T16:54:44.986Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "8",
+      "object_repr": "content@sky.pro",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+      "action_time": "2024-05-10T17:06:56.682Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "8",
+      "object_repr": "content@sky.pro",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Last login\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+      "action_time": "2024-05-10T17:08:45.377Z",
+      "user": 1,
+      "content_type": 3,
+      "object_id": "2",
+      "object_repr": "content manager",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+      "action_time": "2024-05-10T17:48:40.541Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "admin@sky.pro",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 5,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 6,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add категория",
+      "content_type": 7,
+      "codename": "add_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change категория",
+      "content_type": 7,
+      "codename": "change_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete категория",
+      "content_type": 7,
+      "codename": "delete_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view категория",
+      "content_type": 7,
+      "codename": "view_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add продукт",
+      "content_type": 8,
+      "codename": "add_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change продукт",
+      "content_type": 8,
+      "codename": "change_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete продукт",
+      "content_type": 8,
+      "codename": "delete_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view продукт",
+      "content_type": 8,
+      "codename": "view_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add версия",
+      "content_type": 10,
+      "codename": "add_version"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change версия",
+      "content_type": 10,
+      "codename": "change_version"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete версия",
+      "content_type": 10,
+      "codename": "delete_version"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view версия",
+      "content_type": 10,
+      "codename": "view_version"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add статья",
+      "content_type": 9,
+      "codename": "add_blogpost"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change статья",
+      "content_type": 9,
+      "codename": "change_blogpost"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete статья",
+      "content_type": 9,
+      "codename": "delete_blogpost"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view статья",
+      "content_type": 9,
+      "codename": "view_blogpost"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add пользователь",
+      "content_type": 11,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change пользователь",
+      "content_type": 11,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete пользователь",
+      "content_type": 11,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view пользователь",
+      "content_type": 11,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can change publication status of product",
+      "content_type": 8,
+      "codename": "can_change_product_is_published_status"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can change description of product",
+      "content_type": 8,
+      "codename": "can_change_product_description"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can change category of product",
+      "content_type": 8,
+      "codename": "can_change_product_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can change title of blogpost",
+      "content_type": 9,
+      "codename": "can_change_blogpost_title"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+      "name": "Can change content of blogpost",
+      "content_type": 9,
+      "codename": "can_change_blogpost_content"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+      "name": "Can change preview of blogpost",
+      "content_type": 9,
+      "codename": "can_change_blogpost_preview"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+      "name": "Can change publication status of blogpost",
+      "content_type": 9,
+      "codename": "can_change_blogpost_is_published_status"
+    }
+  },
+  {
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+      "name": "moderator",
+      "permissions": [
+        43,
+        42,
+        41,
+        28
+      ]
+    }
+  },
+  {
+    "model": "auth.group",
+    "pk": 2,
+    "fields": {
+      "name": "content manager",
+      "permissions": [
+        33,
+        45,
+        47,
+        46,
+        44,
+        34,
+        35,
+        36
+      ]
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "catalog",
+      "model": "category"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "catalog",
+      "model": "product"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "blog",
+      "model": "blogpost"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "catalog",
+      "model": "version"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+      "app_label": "users",
+      "model": "user"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "107eue2wcxpgqfkwwn538sgfp2e1r3ca",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAURP-FtSECl5dL934DuVxAqgaS0q6M_26bdKHLmXNm3izgutSwjjyHKbELA3b67SLSM7cdpAe2e-fU2zJPke8KP-jgt57y63q4fwcVR93WVlmjklHWOU3FK7tFoHLOUgqIKhv0EAHBGofayGy9FrpIKSmREFTY5wuz7jb3:1s5UPC:zzp8TWvs7LDC1pbNckqbry2PD3kGD6R_TUT7FfuFNPg",
+      "expire_date": "2024-05-24T17:51:38.398Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "1j0127r6loj039d82c12utus8ea55v80",
+    "fields": {
+      "session_data": ".eJxVjM0OwiAQhN-FsyHA8qMevfcZCOwuUjU0Ke3J-O62SQ96nPm-mbeIaV1qXDvPcSRxFVqcfruc8MltB_RI7T5JnNoyj1nuijxol8NE_Lod7t9BTb1ua2A2CX2-FCxnax2rEigQONAe3JahZPLKooOgkuagckFTjNaZMACJzxf29jhV:1roU10:Q6Vgf233SRKcgyLJo6fXV06pOc4DdJFWMiu0p_yGeGg",
+      "expire_date": "2024-04-07T20:00:22.543Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "4i5qupg2wb656cobv6hj79biiwlxdhus",
+    "fields": {
+      "session_data": ".eJxVjM0OwiAQhN-FsyHA8qMevfcZCOwuUjU0Ke3J-O62SQ96nPm-mbeIaV1qXDvPcSRxFVqcfruc8MltB_RI7T5JnNoyj1nuijxol8NE_Lod7t9BTb1ua2A2CX2-FCxnax2rEigQONAe3JahZPLKooOgkuagckFTjNaZMACJzxf29jhV:1rywUb:pObPfyhx4HUbrZY2ZMXjcgurw3eRwaOCG3yBwKNcVYQ",
+      "expire_date": "2024-05-06T16:26:09.092Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "6xc69pm2cydvpgyos678eb1krzp3sy0v",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hDolGnr0n3PQGYYkKqhSWlXxrsbki50-997_608HXv2R42bX0RdFajL78YUnrE0IA8q91WHtezbwrop-qRVz6vE1-10_w4y1dxq7g2nFKQ30hlyTMOICAR24okERQbmzllEa4EF4xgixwSGxTGAVZ8vC-s41A:1s2cGb:tidPtS-LSJFCWgIpoQfhMu0U57FFzoZuP_Q_Jrdot6U",
+      "expire_date": "2024-05-16T19:38:53.828Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "8wr6k487lovxj67ps2s2h5jkxyokkubn",
+    "fields": {
+      "session_data": ".eJxVjM0OwiAQhN-FsyHA8qMevfcZCOwuUjU0Ke3J-O62SQ96nPm-mbeIaV1qXDvPcSRxFVqcfruc8MltB_RI7T5JnNoyj1nuijxol8NE_Lod7t9BTb1ua2A2CX2-FCxnax2rEigQONAe3JahZPLKooOgkuagckFTjNaZMACJzxf29jhV:1s1Ny4:04NYUlOjp2dFKWSvjjd06smZEyVdX3qHDYnt3OlqrKI",
+      "expire_date": "2024-05-13T10:10:40.892Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "f3a3qh0tpv69g5ayr7yme68enf4obw2s",
+    "fields": {
+      "session_data": ".eJxVjM0OwiAQhN-FsyHA8qMevfcZCOwuUjU0Ke3J-O62SQ96nPm-mbeIaV1qXDvPcSRxFVqcfruc8MltB_RI7T5JnNoyj1nuijxol8NE_Lod7t9BTb1ua2A2CX2-FCxnax2rEigQONAe3JahZPLKooOgkuagckFTjNaZMACJzxf29jhV:1rxYeC:mGmuvVS6abbl-X5jmH8bDg7Ym_ha3oHaSSeRG8Swsvw",
+      "expire_date": "2024-05-02T20:46:20.936Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "hjjzgpdxry2tzg9iwj1xq98gkufble0c",
+    "fields": {
+      "session_data": ".eJxVjM0OwiAQhN-FsyHA8qMevfcZCOwuUjU0Ke3J-O62SQ96nPm-mbeIaV1qXDvPcSRxFVqcfruc8MltB_RI7T5JnNoyj1nuijxol8NE_Lod7t9BTb1ua2A2CX2-FCxnax2rEigQONAe3JahZPLKooOgkuagckFTjNaZMACJzxf29jhV:1rmJBP:A6q1ihnxYVdoze3n_w0oTvXfaoKx0nLP6mQzNFohk40",
+      "expire_date": "2024-04-01T20:02:07.006Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "vhla0nvolqch0kzx32kh7dbg71taknli",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSEFOzxcuu83kBlgpGogKe3K-O_apAvd3nPOfYmA21rC1vMS5iQuwonT70YYH7nuIN2x3pqMra7LTHJX5EG7nFrKz-vh_h0U7OVbs9LoNUP0OUfC0VgNZ8vAaTBI7BkU2QzkQIF22ifWVoEywwg-Gbbi_QH5MjfB:1s5TXR:66Ps5KR5LMvMFwOeaUABz-EaElPD8dNFSFv79X8q7pQ",
+      "expire_date": "2024-05-24T16:56:05.881Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "xazun5xziebik3ei8pj1v8g4qesrj5lv",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hDolGnr0n3PQGYYkKqhSWlXxrsbki50-997_608HXv2R42bX0RdFajL78YUnrE0IA8q91WHtezbwrop-qRVz6vE1-10_w4y1dxq7g2nFKQ30hlyTMOICAR24okERQbmzllEa4EF4xgixwSGxTGAVZ8vC-s41A:1s3dYF:R6i3YzDO6yxoAVrUmRXzqq5WvJ2D5p0nhsBMhwcOyTw",
+      "expire_date": "2024-05-19T15:13:19.093Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "xx5tvwolvyz5cppsmvtfm6tz909jdubh",
+    "fields": {
+      "session_data": ".eJxVjM0OwiAQhN-FsyHA8qMevfcZCOwuUjU0Ke3J-O62SQ96nPm-mbeIaV1qXDvPcSRxFVqcfruc8MltB_RI7T5JnNoyj1nuijxol8NE_Lod7t9BTb1ua2A2CX2-FCxnax2rEigQONAe3JahZPLKooOgkuagckFTjNaZMACJzxf29jhV:1rttBV:EpLBuv0LAENGZ3fIPYgo5LpnMEqfYaKVwmXKjSCRjfY",
+      "expire_date": "2024-04-22T17:53:33.683Z"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+      "name": "Периферия и аксессуары",
+      "description": "К периферийным устройствам относят вспомогательное оборудование, например, мышь, клавиатуру. Вспомогательное оборудование каким-либо способом подсоединяется (подключается) к компьютеру и работает совместно с ним."
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+      "name": "Мониторы",
+      "description": "Устройство, которое позволяет визуализировать информацию, которую вы вводите на компьютере. Оно представляет собой экран, на котором отображаются картинки, тексты, видео и другие графические элементы."
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 3,
+    "fields": {
+      "name": "Системный блок",
+      "description": "Физически представляет собой корпус, наполненный аппаратным обеспечением для создания компьютера. Функционально представляет собой основу для создания и дальнейшего расширения вычислительной системы."
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 4,
+    "fields": {
+      "name": "Оргтехника",
+      "description": "Техническое оборудование офиса, облегчающее и ускоряющее бумажное делопроизводство и административно-управленческую деятельность."
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+      "name": "Sony 100",
+      "description": "Sony 100 - первое поколение моделей мониторов Sony Group Corporation.",
+      "image": "products_images/Sony_100.jpg",
+      "category": 2,
+      "price": "9900.00",
+      "created_at": "2024-03-18T20:00:30.513Z",
+      "updated_at": "2024-05-10T16:05:56.834Z",
+      "count_of_views": 11,
+      "owner": 4,
+      "is_published": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 2,
+    "fields": {
+      "name": "Samsung CF39",
+      "description": "Монитор samsung С24F390 - это игровая модель, с которой вы сможете в полной мере насладиться невероятно красочной и максимально четкой картинкой в процессе прохождения видеоигры. данное устройство стало обладателем классической черной расцветки, поэтому оно достойно займет свое место на вашем рабочем столе.",
+      "image": "products_images/Samsung-CF39.jpg",
+      "category": 2,
+      "price": "9999.00",
+      "created_at": "2024-03-18T20:00:30.513Z",
+      "updated_at": "2024-05-10T16:37:34.213Z",
+      "count_of_views": 34,
+      "owner": null,
+      "is_published": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 3,
+    "fields": {
+      "name": "Samsung Essential S24",
+      "description": "Монитор Samsung LS24C360EAIXCI выполнен в черном корпусе с диагональю экрана 24\". Он устанавливается на широкую подставку и может фиксироваться на стене. Для этого подбирается крепление, соответствующее стандарту VESA 75x75. Изогнутый экран обеспечивает полное погружение в происходящее. Охватывая большее поле зрения, он уменьшает периферийные искажения, позволяет лучше ощутить глубину изображения и сосредоточиться на нем.\r\nВ основе экрана Samsung LS24C360EAIXCI лежит VA-матрица с LED-подсветкой и широкими углами обзора 178°/178°. Благодаря ей изображение на экране обретает разрешение 1920x1080 (Full-HD) и четкость цветопередачи вне зависимости от ракурса просмотра. Для синхронизации видеокарты и монитора используется технология AMD FreeSync. Она предотвращает разрывы изображения, обеспечивая непрерывность процесса игры. Частота 75 Гц исключает лаги и шлейфы при просмотре контента. Разъемы HDMI и VGA (D-Sub) создают удобную и гибкую среду для подключения.",
+      "image": "products_images/Samsung_Essential_S24.jpg",
+      "category": 2,
+      "price": "9999.99",
+      "created_at": "2024-03-18T20:00:30.513Z",
+      "updated_at": "2024-04-21T20:51:10.915Z",
+      "count_of_views": 7,
+      "owner": null,
+      "is_published": false
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 4,
+    "fields": {
+      "name": "Logitech M190 Black",
+      "description": "Беспроводная мышь Logitech M190 с корпусом из серого и черного пластика подключается к компьютеру или ноутбуку по радиоканалу. Приемный блок для USB-порта входит в комплект. Связь остается стабильной в радиусе до 10 м. Симметричный корпус с нескользящим прорезиненным покрытием подходит для правой и левой руки.",
+      "image": "products_images/Logitech-M190-Charcoal.jpg",
+      "category": 1,
+      "price": "500.00",
+      "created_at": "2024-03-18T20:00:30.513Z",
+      "updated_at": "2024-05-10T15:52:22.601Z",
+      "count_of_views": 29,
+      "owner": null,
+      "is_published": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 5,
+    "fields": {
+      "name": "4Aces",
+      "description": "Бренд 4Aces - команда профессионалов, которые знают, что такое надежный игровой компьютер.",
+      "image": "products_images/4Aces.jpg",
+      "category": 3,
+      "price": "7499.90",
+      "created_at": "2024-03-18T20:00:30.513Z",
+      "updated_at": "2024-05-10T19:03:52.089Z",
+      "count_of_views": 209,
+      "owner": 4,
+      "is_published": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 6,
+    "fields": {
+      "name": "Sony 200",
+      "description": "Sony 200 - второе поколение моделей мониторов Sony Group Corporation.",
+      "image": "products_images/Sony_200.jpg",
+      "category": 2,
+      "price": "1990.89",
+      "created_at": "2024-03-18T20:00:30.513Z",
+      "updated_at": "2024-05-10T16:02:53.688Z",
+      "count_of_views": 15,
+      "owner": 4,
+      "is_published": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 7,
+    "fields": {
+      "name": "Epson 100",
+      "description": "Epson 100 - первое поколение моделей принтеров Epson.",
+      "image": "products_images/Epson.jpg",
+      "category": 4,
+      "price": "6979.99",
+      "created_at": "2024-03-18T20:00:30.513Z",
+      "updated_at": "2024-05-10T15:53:08.573Z",
+      "count_of_views": 54,
+      "owner": null,
+      "is_published": false
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 8,
+    "fields": {
+      "name": "Canon 100",
+      "description": "Canon 100 - первое поколение моделей принтеров Canon.",
+      "image": "products_images/Canon.jpg",
+      "category": 4,
+      "price": "5990.00",
+      "created_at": "2024-03-18T20:00:30.513Z",
+      "updated_at": "2024-05-10T16:06:10.900Z",
+      "count_of_views": 88,
+      "owner": null,
+      "is_published": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 11,
+    "fields": {
+      "name": "Acer B248",
+      "description": "Acer B248 - 23,8\" монитор full hd 1920x1080 с поддержкой HDR10. Док-станция Acer серии B8 повышает вашу производительность благодаря быстрому подключению и зарядке ноутбуков и других периферийных устройств, а также обеспечивает четкое изображение с разрешением 1080p.",
+      "image": "products_images/Acer_100.jpg",
+      "category": 2,
+      "price": "6778.99",
+      "created_at": "2024-04-08T11:54:58.253Z",
+      "updated_at": "2024-05-10T12:18:33.466Z",
+      "count_of_views": 116,
+      "owner": null,
+      "is_published": false
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 19,
+    "fields": {
+      "name": "Test product",
+      "description": "Created by auth_user",
+      "image": "",
+      "category": 2,
+      "price": "987.00",
+      "created_at": "2024-04-30T13:35:58.940Z",
+      "updated_at": "2024-05-10T16:37:55.302Z",
+      "count_of_views": 96,
+      "owner": 3,
+      "is_published": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 21,
+    "fields": {
+      "name": "Test product 2",
+      "description": "Test 2",
+      "image": "",
+      "category": 3,
+      "price": null,
+      "created_at": "2024-05-10T16:31:36.649Z",
+      "updated_at": "2024-05-10T16:38:49.578Z",
+      "count_of_views": 20,
+      "owner": 4,
+      "is_published": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 22,
+    "fields": {
+      "name": "Test product 3",
+      "description": "Test 3",
+      "image": "",
+      "category": 1,
+      "price": "4321.00",
+      "created_at": "2024-05-10T16:38:42.405Z",
+      "updated_at": "2024-05-10T16:38:46.227Z",
+      "count_of_views": 4,
+      "owner": 6,
+      "is_published": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 1,
+    "fields": {
+      "product": 5,
+      "version_number": "v1.0",
+      "version_name": "(базовая сборка)",
+      "is_active": false
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 2,
+    "fields": {
+      "product": 11,
+      "version_number": "v2.0",
+      "version_name": "(улучшенная сборка)",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 3,
+    "fields": {
+      "product": 5,
+      "version_number": "v0.1",
+      "version_name": "(новинка)",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 4,
+    "fields": {
+      "product": 8,
+      "version_number": "v3.0",
+      "version_name": "(б/у)",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 5,
+    "fields": {
+      "product": 7,
+      "version_number": "v1.0",
+      "version_name": "(базовая сборка)",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 6,
+    "fields": {
+      "product": 11,
+      "version_number": "v3.0",
+      "version_name": "(б/у)",
+      "is_active": false
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 9,
+    "fields": {
+      "product": 2,
+      "version_number": "v0.1",
+      "version_name": "(новинка)",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 11,
+    "fields": {
+      "product": 19,
+      "version_number": "v2.0",
+      "version_name": "(улучшенная сборка)",
+      "is_active": true
+    }
+  },
+  {
+    "model": "blog.blogpost",
+    "pk": 3,
+    "fields": {
+      "title": "Новые мониторы",
+      "slug": "novyie-monitoryi",
+      "content": "Скоро в магазине появится новая модель мониторов! Мы уверены, цена Вас приятно удивит.",
+      "preview": "blogpost_images/Digma_in_box.jpg",
+      "created_at": "2024-04-10T19:47:52Z",
+      "is_published": true,
+      "views": 116
+    }
+  },
+  {
+    "model": "blog.blogpost",
+    "pk": 7,
+    "fields": {
+      "title": "Новые принтеры",
+      "slug": "novyie-printeryi",
+      "content": "Написать текст поста",
+      "preview": "blogpost_images/Printer_box.jpg",
+      "created_at": "2024-04-10T20:36:54Z",
+      "is_published": false,
+      "views": 14
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$fB7DlUdt18q9tSsM9F1eIA$/SitG/zuElcvwM8yIma2rczh0pT6YBgqgRyt8oglrZI=",
+      "last_login": "2024-05-10T10:13:19Z",
+      "is_superuser": true,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-04-30T09:12:30Z",
+      "email": "admin@sky.pro",
+      "avatar": "",
+      "phone": null,
+      "country": null,
+      "verification_code": null,
+      "groups": [
+        1,
+        2
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$XdhAglWUAdUFrnaBlRNxL7$GGo2ktk3ZA6ld8a5mhx8KmwwZ9n/DQeKJOs1ZQAkYYs=",
+      "last_login": "2024-04-30T11:22:45.995Z",
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-04-30T10:48:17.698Z",
+      "email": "test@mail.ru",
+      "avatar": "",
+      "phone": null,
+      "country": null,
+      "verification_code": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$eF1p3kF8SqTLOPSBMILzYN$lXQAJPUB17E6mjfP+RnqacybWnZ18ZlcB80XcpSHYik=",
+      "last_login": "2024-05-10T12:17:30.812Z",
+      "is_superuser": false,
+      "first_name": "Игорь",
+      "last_name": "Ларионов",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-04-30T13:02:18Z",
+      "email": "larionovbox@yandex.ru",
+      "avatar": "user_pictures/31-05-2023_153808.jpg",
+      "phone": "9997774444",
+      "country": "Нидерланды",
+      "verification_code": "1558760711",
+      "groups": [
+        1
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$dlBwurBVHBIIvLXB4sI1na$MfYmxKOErPQZN0V2C+sMdAaryHxdHXUe94ehWOBoCts=",
+      "last_login": "2024-05-10T19:09:05.811Z",
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-04-30T13:12:18Z",
+      "email": "jedialar@gmail.com",
+      "avatar": "",
+      "phone": "333222111",
+      "country": "Англия",
+      "verification_code": "1067655379",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 6,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$LA5TVt3VGOqSKZvvy4G7NL$SzXLlUZmKGPWDyAFkb42vk4d+BcaNwOShYbn3ZTl3PY=",
+      "last_login": "2024-05-10T16:37:45.351Z",
+      "is_superuser": false,
+      "first_name": "moder",
+      "last_name": "moder",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-05-10T12:09:18Z",
+      "email": "moderator@sky.pro",
+      "avatar": "",
+      "phone": null,
+      "country": null,
+      "verification_code": null,
+      "groups": [
+        1
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 8,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$JAznRx5XJ8TcpWBgbLWR7b$Vmx5qsRPMramrOcONLwT60u6FXF5OhCIG6rkX/OBDJI=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-05-10T16:54:12Z",
+      "email": "content@sky.pro",
+      "avatar": "",
+      "phone": null,
+      "country": null,
+      "verification_code": null,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
+    }
+  }
+]
