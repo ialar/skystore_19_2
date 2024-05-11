@@ -3,8 +3,8 @@ from django.urls import reverse_lazy
 from django.views.generic import CreateView, DetailView, ListView, UpdateView, DeleteView
 from pytils.translit import slugify
 
+from blog.forms import BlogPostForm
 from blog.models import BlogPost
-from blog.templates.blog.forms import BlogPostForm
 
 CONTENT_PERMISSIONS = ('blog.can_change_blogpost_title', 'blog.can_change_blogpost_content',
                        'blog.can_change_blogpost_preview', 'blog.can_change_blogpost_is_published_status')
