@@ -6,7 +6,7 @@ from django.urls import reverse_lazy, reverse
 from django.views.generic import CreateView, DetailView, ListView, UpdateView, TemplateView, DeleteView
 
 from catalog.forms import ProductForm, VersionForm, ProductModeratorForm
-from catalog.models import Product, Version
+from catalog.models import Product, Version, Category
 
 
 class ProductListView(ListView):
@@ -19,8 +19,6 @@ class ProductListView(ListView):
 
     def get_context_data(self, *args, **kwargs):
         context_data = super().get_context_data(*args, **kwargs)
-        # context_data = Product.objects.all()
-        # products = self.get_queryset(*args, **kwargs)[:6]
         products = self.get_queryset(*args, **kwargs)
         for product in products:
             versions = Version.objects.filter(product=product)
@@ -32,6 +30,10 @@ class ProductListView(ListView):
 
         context_data['object_list'] = products
         return context_data
+
+
+class CategoryListView(ListView):
+    model = Category
 
 
 class ProductDetailView(LoginRequiredMixin, DetailView):
@@ -47,7 +49,6 @@ class ProductDetailView(LoginRequiredMixin, DetailView):
     def get_context_data(self, **kwargs):
         context_data = super().get_context_data(**kwargs)
         product = self.get_object()
-        # context_data['versions'] = Version.objects.filter(product=product)
         context_data['current_version'] = Version.objects.filter(product=product).filter(is_active=True).first()
         return context_data
 
