@@ -62,7 +62,7 @@ class ProductDetailView(LoginRequiredMixin, DetailView):
 class ContactsTemplateView(TemplateView):
     template_name = 'catalog/contacts.html'
 
-    def post(self, request, *args, **kwargs):
+    def post(self, request):
         name = request.POST.get('name')
         phone = request.POST.get('phone')
         message = request.POST.get('message')
